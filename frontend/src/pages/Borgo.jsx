@@ -21,7 +21,7 @@ function BorgoNew() {
         setBorghi(detailBorgo);
         console.log(detailBorgo.name);
         setIsLoading(false);
-      }, 1000);
+      }, 2000);
     };
     fetchDetails();
   }, []);
