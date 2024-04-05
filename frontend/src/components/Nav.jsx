@@ -8,18 +8,18 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-6">
-      <div className="flex items-center flex-shrink-0 text-white">
+    <nav className="flex flex-wrap items-center justify-between  bg-transparent p-2">
+      <div className="flex items-center flex-shrink-0 text-black">
         <a href={"/"}>
           <span className="font-semibold text-xl tracking-tight text-5xl m-5">
-            <Logo className="w-10 h-10" /> Borghi
+            <Logo /> Borghi
           </span>
         </a>
       </div>
       <div className="block">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center px-3 py-2 border rounded"
+          className="flex items-center px-2 py-2 border rounded"
         >
           {isOpen ? (
             <XIcon className="h-6 w-6" aria-hidden="true" />

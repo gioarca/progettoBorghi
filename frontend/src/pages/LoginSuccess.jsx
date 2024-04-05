@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Card from "../components/Card";
 import { Link, useParams } from "react-router-dom";
 import Arrow from "../components/Arrow";
 // import CardForm from "../components/CardForm";
 import Loader from "../components/Loader";
 import axios from "axios";
+import Prenota from "../components/Prenota";
 
 function LoginSuccess() {
   const [borghi, setBorghi] = useState([]);
@@ -57,10 +57,13 @@ function LoginSuccess() {
     //   })}
 
     <div className="flex flex-wrap justify-center grid-flow-row-dense grid-cols-2 grid-rows-3">
+      <div className="flex-wrap m-4 text-center justify-center">
+        <p>Seleziona uno dei seguenti borghi per immergerti nella vita slow</p>
+      </div>
       {borghi.map((borgo) => {
         return (
           <div
-            className="max-w-xl rounded-large overflow-hidden shadow-lg m-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300"
+            className="max-w-80 rounded-lg overflow-hidden shadow-lg m-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300"
             key={borgo._id}
           >
             <Link to={"/borgo/" + borgo._id}>
@@ -69,14 +72,12 @@ function LoginSuccess() {
                 src={borgo.imgURL}
                 alt={borgo.name}
               />
-              <h4 className="flex flex-col text-xl text-center m-4">
-                {borgo.name}
-              </h4>
+              <h1 className="flex flex-col text-center m-2">{borgo.name}</h1>
             </Link>
           </div>
         );
       })}
-      <div className="flex flex-wrap">
+      <div className="flex flex-col">
         <Arrow />
       </div>
     </div>

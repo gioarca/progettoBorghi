@@ -10,9 +10,9 @@ const {
 } = require("../../controller/borgo.controller.js");
 
 router.post("/", createBorgo);
-router.get("/:id", getBorgo);
+router.get("/:_id", getBorgo); // ricerca per nome o per _id
 router.get("/", getBorghi);
-router.put("/:id", updateBorgo);
-router.delete("/:id", deleteBorgo);
+router.put("/:_id", updateBorgo);
+router.delete("/:_id", deleteBorgo);
 
 module.exports = router;
