@@ -10,6 +10,7 @@ import Grazie from "./Grazie";
 import { RequireAuth } from "react-auth-kit";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import Work from "./Work";
 
 function Pages() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function Pages() {
         <Route path="/registrazione" element={<Registrazione />} />
         <Route path="/contatti" element={<Contatti />} />
         <Route path="/grazie" element={<Grazie />} />
+        <Route path="/workinprogress" element={<Work />} />
       </Routes>
     </AnimatePresence>
   );

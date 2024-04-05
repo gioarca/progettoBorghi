@@ -51,7 +51,7 @@ const Nav = () => {
                 Cos'è Borghi?
               </a>
               <a
-                href={"/login"}
+                href={"/loginSuccess"}
                 className="block m-3 lg:inline-block lg:mt-0 hover:text-red-600"
               >
                 Login

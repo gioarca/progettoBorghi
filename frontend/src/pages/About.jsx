@@ -1,7 +1,5 @@
-import Arrow from "../components/Arrow";
 import React from "react";
-import Presentazione from "../components/Presentazione";
-// import Loader from "../components/Loader"; // loader component
+import Buttons from "../components/Buttons";
 
 function About() {
   return (
@@ -13,17 +11,18 @@ function About() {
       <div>
         <p className="m-5">
           Questo è <code>Borghi</code>: un progetto nato dal popolo per la
-          rinascita dei borghi
+          rinascita dei borghi.
         </p>
-        <p></p>
+
         <p>Nasce per la rinascita delle piccole cose.</p>
         <p className=" m-4">
           Rivolto a tutti gli italiani che non smettono di crederci:
-          <p className="text-xl font-bold m-3">
-            imprenditori, creativi, nomadi digitali, freelance, sviluppatori e
-            chi ne ha più ne metta.
-          </p>
         </p>
+        <p className="text-xl font-bold m-3">
+          imprenditori, creativi, nomadi digitali, freelance, sviluppatori e chi
+          ne ha più ne metta.
+        </p>
+
         <p>A tutti quelli che hanno perso la fiducia in questo paese.</p>
         <p>
           A tutti quelli che vogliono vivere nei borghi e che sono stanchi dei
@@ -33,10 +32,14 @@ function About() {
         <p className="text-l font-bold m-3">
           Dedicato a chi vuole una vita slow.
         </p>
+        <p>
+          All'interno della piattaforma troverai i borghi più belli e meno
+          popolosi che non aspettano altro che essere visitati e abitati.
+        </p>
+        <p>Sarai tu il prossimo? </p>
+        <p>Clicca qui sotto ed entra.</p>
 
-        <a href={"/"}>
-          <Arrow />
-        </a>
+        <Buttons />
       </div>
     </div>
   );

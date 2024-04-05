@@ -37,88 +37,78 @@ function CardForm({ addCity }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col ring-2 gap-3 w-80 mb-10 bg-grey-200 p-5 rounded-lg"
+      className="flex flex-col justify-center items-center gap-3 mb-10 bg-grey-200 p-5 rounded-lg m-auto"
     >
-      <div className="flex flex-col m-1 bg-transparent">
-        <label>Nome Borgo</label>
+      <div className="flex flex-col m-1 w-72">
         <input
           type="text"
           name="name"
-          placeholder="Nome"
+          placeholder="Nome del Borgo"
           value={formData.name}
           onChange={handleInputChange}
-          className="bg-slate-300 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
         ></input>
       </div>
-      <div className="flex flex-col m-1 bg-transparent">
-        <label>Luogo</label>
+      <div className="flex flex-col m-1 w-72">
         <input
           type="text"
-          name="name"
+          name="place"
+          placeholder="Inserisci il luogo"
           value={formData.place}
           onChange={handleInputChange}
-          className="bg-slate-300 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
         ></input>
       </div>
-      <div className="flex flex-col m-1">
-        <label>Descrizione</label>
+      <div className="flex flex-col m-1 w-72">
         <textarea
           name="description"
           value={formData.description}
+          placeholder="Descrizione"
           onChange={handleInputChange}
-          className="bg-slate-300 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
         ></textarea>
       </div>
-      <div className="flex flex-col m-1">
-        <label>Immagine</label>
+      <div className="flex flex-col m-1 w-72">
+        <label></label>
         <input
-          type="text"
+          type="link"
           name="imgURL"
+          placeholder="Inserisci un link di un'immagine"
           value={formData.imgURL}
           onChange={handleInputChange}
-          className="bg-slate-300 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
         ></input>
       </div>
-      <div className="flex flex-col m-1">
-        <label>Prezzo medio case in vendita</label>
+      <div className="flex flex-col m-1 w-72">
         <input
           type="link"
           name="linkHouses"
+          placeholder="Prezzo medio case in vendita"
           value={formData.price}
           onChange={handleInputChange}
-          className="bg-slate-300 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
         ></input>
       </div>
-      <div className="flex flex-col m-1">
-        <label>Velocità internet</label>
+      <div className="flex flex-col m-1 w-72">
         <input
           type="link"
           name="linkInternet"
+          placeholder="Velocità internet"
           value={formData.speed}
           onChange={handleInputChange}
-          className="bg-slate-300 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
         ></input>
       </div>
-      <div className="flex flex-col m-1">
-        <label>Link Airbnb</label>
+      <div className="flex flex-col m-1 w-72">
         <input
           type="link"
           name="linkAirbnb"
+          placeholder="Link Airbnb"
           value={formData.airbnb}
           onChange={handleInputChange}
-          className="bg-slate-300 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
         ></input>
       </div>
-      {/* <div className="flex flex-col m-1">
-        <label>Visitata?</label>
-        <input
-          type="checkbox"
-          name="isVisited"
-          checked={formData.isVisited}
-          onChange={handleInputChange}
-          className="bg-slate-300 text-black"
-        ></input>
-      </div> */}
       <button className="bg-zinc-700" type="submit">
         Aggiungi Borgo
       </button>

@@ -19,7 +19,7 @@ function BorgoNew() {
         ); // 3000 è la porta per il backend
         const detailBorgo = await data.json();
         setBorghi(detailBorgo);
-        // console.log(detailBorgo.name);
+        console.log(detailBorgo.name);
         setIsLoading(false);
       }, 1000);
     };
@@ -80,9 +80,9 @@ function BorgoNew() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="p-2 ">
           <Prenota />
-          <Arrow href={"/loginSuccess"} />
+          <Arrow />
         </div>
       </div>
     </div>
