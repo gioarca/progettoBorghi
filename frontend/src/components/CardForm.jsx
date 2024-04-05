@@ -37,13 +37,14 @@ function CardForm({ addCity }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-3 w-80 mb-10 bg-zinc-900 p-5 rounded-lg"
+      className="flex flex-col ring-2 gap-3 w-80 mb-10 bg-grey-200 p-5 rounded-lg"
     >
       <div className="flex flex-col m-1 bg-transparent">
         <label>Nome Borgo</label>
         <input
           type="text"
           name="name"
+          placeholder="Nome"
           value={formData.name}
           onChange={handleInputChange}
           className="bg-slate-300 text-black"

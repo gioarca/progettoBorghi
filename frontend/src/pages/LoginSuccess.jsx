@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import Arrow from "../components/Arrow";
-// import CardForm from "../components/CardForm";
+import CardForm from "../components/CardForm";
 import Loader from "../components/Loader";
+import Search from "../components/Search";
 import axios from "axios";
-import Prenota from "../components/Prenota";
 
 function LoginSuccess() {
   const [borghi, setBorghi] = useState([]);
@@ -59,6 +58,8 @@ function LoginSuccess() {
     <div className="flex flex-wrap justify-center grid-flow-row-dense grid-cols-2 grid-rows-3">
       <div className="flex-wrap m-4 text-center justify-center">
         <p>Seleziona uno dei seguenti borghi per immergerti nella vita slow</p>
+        <p>oppure usa la barra di ricerca per cercare un borgo</p>
+        <Search />
       </div>
       {borghi.map((borgo) => {
         return (
@@ -78,7 +79,10 @@ function LoginSuccess() {
         );
       })}
       <div className="flex flex-col">
-        <Arrow />
+        Se vuoi aggiungi un borgo tramite il form qui sotto
+        <div>
+          <CardForm />
+        </div>
       </div>
     </div>
   );

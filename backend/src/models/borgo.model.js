@@ -30,6 +30,18 @@ const borgoSchema = new Schema({
     type: String,
     required: [true, "Please enter a nice House"],
   },
+  ospedale: {
+    type: String,
+    required: [true, "Please enter an hospital nearby"],
+  },
+  comune: {
+    type: String,
+    required: [true, "Please enter a comune website nearby"],
+  },
+  scuole: {
+    type: String,
+    required: [true, "Please enter a school nearby"],
+  },
 });
 
 const Borgo = mongoose.model("Borgo", borgoSchema);

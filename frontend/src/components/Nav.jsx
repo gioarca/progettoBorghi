@@ -8,11 +8,12 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex flex-wrap items-center justify-between  bg-transparent p-2">
+    <nav className="flex flex-wrap items-center justify-between bg-transparent p-1">
       <div className="flex items-center flex-shrink-0 text-black">
         <a href={"/"}>
           <span className="font-semibold text-xl tracking-tight text-5xl m-5">
-            <Logo /> Borghi
+            {/* <Logo /> */}
+            BORGHI
           </span>
         </a>
       </div>
@@ -45,21 +46,21 @@ const Nav = () => {
             <div className="text-sm lg:flex-grow">
               <a
                 href={"/about"}
-                className="block m-4 lg:inline-block lg:mt-0 hover:text-white"
+                className="block m-3 lg:inline-block lg:mt-0 hover:text-red-500"
               >
                 Cos'è Borghi?
               </a>
               <a
-                href={"/prenota"}
-                className="block m-4 lg:inline-block lg:mt-0 hover:text-white"
-              >
-                Prenota il borgo
-              </a>
-              <a
                 href={"/login"}
-                className="block m-4 lg:inline-block lg:mt-0 hover:text-white"
+                className="block m-3 lg:inline-block lg:mt-0 hover:text-red-600"
               >
                 Login
+              </a>
+              <a
+                href={"/contatti"}
+                className="block m-3 lg:inline-block lg:mt-0 hover:text-red-600"
+              >
+                Contatti
               </a>
             </div>
           </div>

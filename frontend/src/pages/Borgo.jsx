@@ -19,7 +19,7 @@ function BorgoNew() {
         ); // 3000 è la porta per il backend
         const detailBorgo = await data.json();
         setBorghi(detailBorgo);
-        console.log(detailBorgo.name);
+        // console.log(detailBorgo.name);
         setIsLoading(false);
       }, 1000);
     };
@@ -36,7 +36,7 @@ function BorgoNew() {
 
   return (
     <div className="flex flex-wrap justify-center text-left transition-opacity ease-in delay-150">
-      <div className="max-w-xl rounded-lg overflow-hidden shadow-2xl m-3">
+      <div className="rounded-lg overflow-hidden shadow-2xl m-3">
         <img className="w-full" src={borghi.imgURL} alt={borghi.name} />
         <div key={borghi._id} className="p-4">
           <div>
@@ -44,37 +44,37 @@ function BorgoNew() {
               <p>{borghi.name}</p>
             </div>
             <div className="p-3">
-              <h3>Descrizione</h3>
-              <p>{borghi.description}</p>
-            </div>
-            <div className="p-3">
-              <h3>Luogo</h3>
+              <h3 className="py-1 underline">Luogo</h3>
               <p>{borghi.place}</p>
             </div>
-            <div className="p-3 underline">
+            <div className="p-3 ">
+              <h3 className="py-1 underline">Descrizione</h3>
+              <p>{borghi.description}</p>
+            </div>
+            <div className="m-3 underline hover:text-red-500 hover:transition-all">
               <a href={borghi.internet} target="_blank">
                 <h3>Velocità Internet</h3>
               </a>
             </div>
-            <div className="p-3 underline">
+            <div className="m-3 underline hover:text-red-500 hover:transition-all">
               <a href={borghi.priceHouses} target="_blank">
                 <h3>Prezzo medio delle case in vendita</h3>
               </a>
             </div>
-            <div className="p-3 underline">
+            <div className="m-3 underline hover:text-red-500 hover:transition-all">
               <a href={borghi.airbnbFilter} target="_blank">
                 <h3>Prezzo medio per un Airbnb per 4 persone</h3>
               </a>
             </div>
             <div className="p-3 ">
               <p>Se vuoi ottenere informazioni per i servizi eccoli qui:</p>
-              <a href="" className="underline">
+              <a href="" className="hover:text-red-500 hover:transition-all">
                 <li>Ospedale più vicino</li>
               </a>
-              <a href="" className="underline">
+              <a href="" className="hover:text-red-500 hover:transition-all">
                 <li>Sito del comune</li>
               </a>
-              <a href="" className="underline">
+              <a href="" className="hover:text-red-500 hover:transition-all">
                 <li>Scuole</li>
               </a>
             </div>
@@ -82,7 +82,7 @@ function BorgoNew() {
         </div>
         <div>
           <Prenota />
-          <Arrow />
+          <Arrow href={"/loginSuccess"} />
         </div>
       </div>
     </div>

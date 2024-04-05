@@ -1,14 +1,13 @@
 import React from "react";
-import Login from "./Login";
-import Search from "../components/Search";
+import Presentazione from "../components/Presentazione";
 import { motion } from "framer-motion";
-import Axios from "axios";
+import Buttons from "../components/Buttons";
 
 function Home() {
   return (
     <motion.div>
-      <Search />
-      <Login />
+      <Presentazione />
+      <Buttons />
     </motion.div>
   );
 }
