@@ -67,7 +67,12 @@ function BorgoNew() {
               </a>
             </div>
             <div className="p-3 ">
-              <p>Se vuoi ottenere informazioni per i servizi eccoli qui:</p>
+              <p className="mb-2">
+                Se vuoi ottenere informazioni per i servizi eccoli qui:
+              </p>
+              <a href="" className="hover:text-red-500 hover:transition-all">
+                <li>Aeroporto più vicino</li>
+              </a>
               <a href="" className="hover:text-red-500 hover:transition-all">
                 <li>Ospedale più vicino</li>
               </a>

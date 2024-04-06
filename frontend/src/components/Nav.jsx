@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "./Logo";
 import { Transition } from "@headlessui/react";
 import { MenuAlt1Icon, XIcon } from "@heroicons/react/outline";
 import { useRef } from "react";
@@ -8,19 +7,19 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex flex-wrap items-center justify-between bg-transparent p-1">
-      <div className="flex items-center flex-shrink-0 text-black">
+    <nav className="flex flex-wrap items-center justify-between bg-transparent m-2">
+      <div className="flex items-center  text-black">
         <a href={"/"}>
-          <span className="font-semibold text-xl tracking-tight text-5xl m-5">
+          <span className="font-semibold text-xl tracking-tight text-5xl m-10">
             {/* <Logo /> */}
             BORGHI
           </span>
         </a>
       </div>
-      <div className="block">
+      <div className="block m-5">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center px-2 py-2 border rounded"
+          className="flex items-center px-2 py-2 border border-2 rounded"
         >
           {isOpen ? (
             <XIcon className="h-6 w-6" aria-hidden="true" />
@@ -41,7 +40,7 @@ const Nav = () => {
         {(ref) => (
           <div
             ref={ref}
-            className="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+            className="w-screen justify-center items-center text-center block flex-grow lg:flex lg:items-center lg:w-auto"
           >
             <div className="text-sm lg:flex-grow">
               <a

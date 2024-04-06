@@ -11,9 +11,9 @@ function Search() {
   };
   return (
     <form onSubmit={submitHandler}>
-      <div className="sm:col-span-4 m-1 flex items-center justify-center float-center">
+      <div className="flex items-center justify-center m-2 float-center sm:col-span-4">
         <div className="mt-2 max-w-5xl sm:max-w-80">
-          <div className="flex rounded-full shadow-sm ring-1 ring-inset ring-black focus-within:ring-2 focus-within:ring-inset focus-within:ring-black sm:max-w-80">
+          <div className="flex rounded-full shadow-sm ring-2 ring-inset ring-black focus-within:ring-2 focus-within:ring-inset focus-within:ring-black sm:max-w-80">
             <span className="flex select-none items-center pl-3 text-gray-500 sm:text-sm">
               Borgo:
             </span>

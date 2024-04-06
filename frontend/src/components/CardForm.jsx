@@ -46,7 +46,7 @@ function CardForm({ addCity }) {
           placeholder="Nome del Borgo"
           value={formData.name}
           onChange={handleInputChange}
-          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-gray-100 border border-gray-200 placeholder-gray-500 text-black"
         ></input>
       </div>
       <div className="flex flex-col m-1 w-72">
@@ -56,7 +56,7 @@ function CardForm({ addCity }) {
           placeholder="Inserisci il luogo"
           value={formData.place}
           onChange={handleInputChange}
-          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-gray-100 border border-gray-200 placeholder-gray-500 text-black"
         ></input>
       </div>
       <div className="flex flex-col m-1 w-72">
@@ -65,7 +65,7 @@ function CardForm({ addCity }) {
           value={formData.description}
           placeholder="Descrizione"
           onChange={handleInputChange}
-          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-gray-100 border border-gray-200 placeholder-gray-500 text-black"
         ></textarea>
       </div>
       <div className="flex flex-col m-1 w-72">
@@ -76,7 +76,7 @@ function CardForm({ addCity }) {
           placeholder="Inserisci un link di un'immagine"
           value={formData.imgURL}
           onChange={handleInputChange}
-          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-gray-100 border border-gray-200 placeholder-gray-500 text-black"
         ></input>
       </div>
       <div className="flex flex-col m-1 w-72">
@@ -86,7 +86,7 @@ function CardForm({ addCity }) {
           placeholder="Prezzo medio case in vendita"
           value={formData.price}
           onChange={handleInputChange}
-          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-gray-100 border border-gray-200 placeholder-gray-500 text-black"
         ></input>
       </div>
       <div className="flex flex-col m-1 w-72">
@@ -96,7 +96,7 @@ function CardForm({ addCity }) {
           placeholder="Velocità internet"
           value={formData.speed}
           onChange={handleInputChange}
-          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-gray-100 border border-gray-200 placeholder-gray-500 text-black"
         ></input>
       </div>
       <div className="flex flex-col m-1 w-72">
@@ -106,7 +106,7 @@ function CardForm({ addCity }) {
           placeholder="Link Airbnb"
           value={formData.airbnb}
           onChange={handleInputChange}
-          className="px-4 shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 text-black"
+          className="px-4 shadow-sm rounded-lg py-3 bg-gray-100 border border-gray-200 placeholder-gray-500 text-black"
         ></input>
       </div>
       <button className="bg-zinc-700" type="submit">

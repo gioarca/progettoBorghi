@@ -40,7 +40,9 @@ function LoginSuccess() {
   return (
     <div>
       <div className="flex-wrap m-4 text-center justify-center">
-        <p>Seleziona uno dei seguenti borghi per immergerti nella vita slow</p>
+        <p>
+          Seleziona uno dei seguenti borghi per esplorarne le caratteristiche
+        </p>
         <p>oppure usa la barra di ricerca per cercare un borgo</p>
         <Search />
       </div>

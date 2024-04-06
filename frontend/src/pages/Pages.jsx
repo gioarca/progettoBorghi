@@ -7,7 +7,6 @@ import Registrazione from "./Registrazione";
 import Searched from "./Searched";
 import Contatti from "./Contatti";
 import Grazie from "./Grazie";
-import { RequireAuth } from "react-auth-kit";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Work from "./Work";
