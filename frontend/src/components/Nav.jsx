@@ -16,6 +16,7 @@ const Nav = () => {
           </span>
         </a>
       </div>
+
       <div className="block m-5">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -47,13 +48,13 @@ const Nav = () => {
                 href={"/about"}
                 className="block m-3 lg:inline-block lg:mt-0 hover:text-red-500"
               >
-                Cos'è Borghi?
+                Di cosa si tratta?
               </a>
               <a
                 href={"/loginSuccess"}
                 className="block m-3 lg:inline-block lg:mt-0 hover:text-red-600"
               >
-                Login
+                Borghi
               </a>
               <a
                 href={"/contatti"}

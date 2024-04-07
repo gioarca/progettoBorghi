@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import CardForm from "../components/CardForm";
 import Loader from "../components/Loader";
-import Search from "../components/Search";
+// import Search from "../components/Search";
 import axios from "axios";
 
 function LoginSuccess() {
@@ -43,8 +43,8 @@ function LoginSuccess() {
         <p>
           Seleziona uno dei seguenti borghi per esplorarne le caratteristiche
         </p>
-        <p>oppure usa la barra di ricerca per cercare un borgo</p>
-        <Search />
+        {/* <p>oppure usa la barra di ricerca per cercare un borgo</p> */}
+        {/* <Search /> verrà implementata in un secondo momento*/}
       </div>
       <div className="flex flex-wrap justify-center grid-flow-row-dense grid-cols-2 grid-rows-3">
         {borghi.map((borgo) => {

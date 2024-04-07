@@ -4,8 +4,8 @@ function Presentazione() {
   return (
     <div>
       <div className="m-7">
-        <h1 className="font-bold text-xl m-5">Benvenuto!</h1>
-        <p>Qui potrai conoscere la bellezza dei borghi d'Italia</p>
+        <h1 className="font-bold text-xl m-5">Benvenuto</h1>
+        <p>Qui potrai partecipare al rinascimento dei borghi d'Italia. </p>
         <p>
           Per cominciare registrati oppure se sei già registrato entra nella
           piattaforma
