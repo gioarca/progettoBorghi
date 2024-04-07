@@ -15,7 +15,7 @@ function Searched() {
   const getSearched = async (name) => {
     setTimeout(async () => {
       const data = await fetch(
-        `http://localhost:3000/api/v1/borgo/search/?query=${name}`
+        `http://localhost:3000/api/v1/borgo/search/?query=${name}` // locale
       );
       const borgo = await data.json();
       setSearchedBorgo(borgo);
