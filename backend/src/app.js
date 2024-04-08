@@ -16,37 +16,37 @@ const orderRoute = require("./v1/routes/order.route.js");
 
 const app = express();
 
-// connessione al database
+// Connessione al database
 mongoose
   .connect(
-    `mongodb+srv://giorgioarcamone93:kLCWLlCoI6PwJRhi@borgoapi.y2jtmaz.mongodb.net/?retryWrites=true&w=majority&appName=BorgoAPI`
-    // { useNewUrlParser: true, useUnifiedTopology: true }
+    "mongodb+srv://giorgioarcamone93:kLCWLlCoI6PwJRhi@borgoapi.y2jtmaz.mongodb.net/?retryWrites=true&w=majority&appName=BorgoAPI",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
   )
   .then(() => {
-    console.log("Connected to the database!");
+    console.log("Connesso al database!");
     app.listen(port, () => {
-      console.log(`Server is running on port ${port}`);
+      console.log(`Il server è in ascolto sulla porta ${port}`);
     });
   })
-  .catch(() => {
-    console.log("Connection failed!");
+  .catch((error) => {
+    console.error("Connessione al database fallita:", error);
   });
 
-// middlewares
+// Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    // origin: ["http://localhost:5173, https://borghi.onrender.com"], // porta per il frontend
-    origin: ["https://main--borghisud.netlify.app/"], // porta per il frontend
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    // allowedHeaders: ["Content-Type"],
+    origin: "https://main--borghisud.netlify.app", // Cors originale corretto
   })
 );
 app.use(mongoSanitize());
 app.use(xss());
 
-// routes
+// Routes
 app.use("/api/v1/borgo", borgoRoute);
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/order", orderRoute);
