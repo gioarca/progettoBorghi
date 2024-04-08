@@ -37,7 +37,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: ["http://localhost:5173, https://borghi.onrender.com"], // porta per il frontend
+    // origin: ["http://localhost:5173, https://borghi.onrender.com"], // porta per il frontend
+    origin: ["https://main--borghisud.netlify.app/"], // porta per il frontend
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
